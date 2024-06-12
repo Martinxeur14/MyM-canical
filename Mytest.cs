@@ -1,4 +1,4 @@
-﻿using Life;
+using Life;
 
 using Life.Network;
 using Life.UI;
@@ -34,7 +34,7 @@ namespace MyTest
                 panel.SetTitle("Menu Mécanical");
                 panel.text = "Ceci est le menu pour les employés de Mécanical. Ce menu est en développement";
                 panel.AddButton("Fermer", ui => player.ClosePanel(ui));
-                panel.AddButton("Contacter", ui => player.("Vous avez contacter un membre de Mécanical")(ui));
+                panel.AddButton("Contacter le personnel", ui => player.Notify("MyMécanical", "Vous avez contacté le personnel"));
 
                 player.ShowPanelUI(panel);
             }
